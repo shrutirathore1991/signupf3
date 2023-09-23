@@ -1,0 +1,176 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:rgb(71, 69, 69);
+}
+
+.container {
+    
+    margin: 0 auto;
+    padding: 40px;
+    background-color: rgb(42, 39, 39);
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+h1{
+    text-align: center;
+    font-size: 48px;
+    color: rgba(192, 37, 52, 0.81)
+}
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: gray;
+    border: none;
+    border-radius: 3px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+button {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    padding: 10px 20px;
+    background-color:gray;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.loader {
+    border: 5px solid #f3f3f3;
+    border-top: 5px solid #007bff;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    animation: spin 2s linear infinite;
+    display: none;
+    margin: 10px auto;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.results {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 10px;
+    /* padding: 20px; */
+}
+
+.card {
+  
+    border-radius: 5px;
+    padding: 10px;
+    background-color:rgb(121, 104, 104);
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    color: rgb(18, 16, 16);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.card img {
+    max-width: 100px;
+   padding: 10px;
+   padding-left: 30px;
+}
+
+.card a {
+    color: red;
+    text-decoration: none;
+}
+
+@media screen and (max-width : 600px)
+ {
+    *
+    {
+        margin: 0;
+        padding: 0;
+    }
+    h1
+    {
+        font-size: 25px;
+        padding-bottom: 12px;
+    }
+    input[type="text"]
+    {
+        height: 10px;
+        font-size: 10px;
+    }
+    button{
+            height: 19px;
+            font-size: 9px;
+            text-align: center;
+            padding: 5px;
+            
+    }
+
+    .results
+    {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .card {
+        padding: 0px;
+        background-color:rgb(121, 104, 104);
+        display: flex;
+       
+        color: white;
+        box-shadow: rgba(83, 79, 79, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    }
+    h2
+    {
+        font-size: 15px;
+    }
+    .card img {
+        max-width: 80px;
+
+    }
+
+}
+
+@media screen and (min-width:601px) and (max-width : 850px)
+ {
+    *
+    {
+        margin: 0;
+        padding: 0;
+    }
+    h1
+    {
+        padding: 20px;
+        font-size: 40px;
+    }
+    input[type="text"]
+    {
+        height: 20px;
+        font-size: 10px;
+    }
+
+    .results
+    {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .card {
+        background-color:rgb(121, 104, 104);
+        display: flex;
+        align-items: center;
+        color: rgb(18, 16, 16);
+        box-shadow: rgba(83, 79, 79, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    }
+    h2
+    {
+        font-size: 20px;
+    }
+    .card img {
+        max-width: 90px;
+
+    }
+
+}
